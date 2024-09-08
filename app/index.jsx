@@ -4,8 +4,8 @@ import { Link } from 'expo-router';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Aora!</Text>
+    <View className='flex-1 items-center justify-center bg-primary'>
+      <Text className='text-3xl text-white font-pblack'>Aora!</Text>
       <StatusBar style='auto' />
       <Link href='/profile' style={{ color: 'blue' }}>
         Go to Profile
@@ -13,12 +13,3 @@ export default function App() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
