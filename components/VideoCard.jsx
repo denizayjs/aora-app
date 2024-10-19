@@ -54,7 +54,7 @@ const VideoCard = ({
             uri: 'https://www.w3schools.com/html/mov_bbb.mp4',
           }}
           className='w-full h-60 rounded-xl mt-3 '
-          resizeMode={ResizeMode.COVER}
+          resizeMode={ResizeMode.CONTAIN}
           useNativeControls
           shouldPlay
           onPlaybackStatusUpdate={(status) => {
