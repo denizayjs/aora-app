@@ -2,7 +2,7 @@ import { View, Text, ScrollView, Image, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import React, { useState } from 'react';
 import { images } from '../../constants';
-import FormFiled from '../../components/FormFiled';
+import FormField from '../../components/FormField';
 import CustomButton from '../../components/CustomButton';
 import { Link, router } from 'expo-router';
 import { createUser } from '../../lib/appwrite';
@@ -52,7 +52,7 @@ const SignUp = () => {
             Sign up to Aora
           </Text>
 
-          <FormFiled
+          <FormField
             title='Username'
             value={form.username}
             handleChangeText={(e) =>
@@ -64,7 +64,7 @@ const SignUp = () => {
             otherStyles='mt-10'
           />
 
-          <FormFiled
+          <FormField
             title='Email'
             value={form.email}
             handleChangeText={(e) =>
@@ -76,7 +76,7 @@ const SignUp = () => {
             otherStyles='mt-7'
             keyboardType='email-address '
           />
-          <FormFiled
+          <FormField
             title='Password'
             value={form.password}
             handleChangeText={(e) =>
